@@ -104,10 +104,26 @@ main{
 .main-album{
     display: flex;
     height:100vh;
-    background-color: pink;
-    width: 100%;
+    /*background-color: pink;*/
+    width:calc(100% - 180px);
     overflow-y: auto;
+    justify-content: center;
 } 
+.nav-orizzontale {
+    list-style: none;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 60px;
+    padding:10px ; 
+    display: flex;   
+}
+.nav-orizzontale li{
+    display: inline-block;
+    text-align: center;
+    padding-right: 15px;
+    font-size: 12px;
+    font-weight: 500;
+}
 
 
 
