@@ -52,10 +52,10 @@ main{
 .side-nav {
     width:180px;
     background-color: black;
-    /*padding-top: 65px;
-    padding-left: 10px;*/
     padding: 65px 10px 0 10px;
     font-size: 12px; 
+    position: fixed;
+    height: 100vh;
     
 }
 .icone{
@@ -63,10 +63,9 @@ main{
     vertical-align: middle;   
 }
 .prima-lista, li{
-   padding: 4px 0;
+    padding: 4px 0;
     opacity: 0.7;
-    list-style: none;
-    
+    list-style: none;    
 }
 .playlist{
     font-size: 14px;
@@ -83,8 +82,7 @@ main{
     background-color: grey;
     height: 20px;
     width: 20px;
-    border-radius: 50%;
-    
+    border-radius: 50%;    
 }
 .name{
     display: inline-block;
@@ -98,31 +96,59 @@ main{
 .name-nav {
     padding: 5px 10px 0 0;
 }
-
+.seconda-lista {
+   
+}
 
 /*main principle*/
 .main-album{
     display: flex;
-    height:100vh;
+    height:calc(100vh - 60px);
     /*background-color: pink;*/
     width:calc(100% - 180px);
+    margin-left: 180px;
     overflow-y: auto;
-    justify-content: center;
+    padding: 0 15px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    align-content: flex-start;
 } 
 .nav-orizzontale {
-    list-style: none;
     display: inline-block;
     justify-content: center;
-    margin-top: 60px;
     padding:10px ; 
-    display: flex;   
+    display: flex; 
+    width: 100%;
+
 }
 .nav-orizzontale li{
     display: inline-block;
     text-align: center;
-    padding-right: 15px;
+    padding: 0 15px 20px 0;
     font-size: 12px;
     font-weight: 500;
+}
+/*prima row*/
+.title-main{
+    width: 100%;
+    padding-bottom: 20px;
+}
+.prima-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+        
+}
+.album{
+    width: calc((100% / 6) - 15px);
+    
+
+}
+.copertina{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
 }
 
 
