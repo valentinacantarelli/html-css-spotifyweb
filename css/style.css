@@ -4,7 +4,24 @@
     box-sizing: border-box;
 }
 /*common*/
-
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 /*body*/
 body{
@@ -65,7 +82,8 @@ main{
 .prima-lista, li{
     padding: 4px 0;
     opacity: 0.7;
-    list-style: none;    
+    list-style: none; 
+    
 }
 .playlist{
     font-size: 14px;
@@ -91,13 +109,18 @@ main{
 }
 .nav-bottom{
     position: fixed;
-    bottom: 68px;
+    bottom: 60px;
+    background-color: black;
+    height: 65px;
 }
 .name-nav {
     padding: 5px 10px 0 0;
 }
+
 .seconda-lista {
-   
+    overflow-y: auto;
+    
+        
 }
 
 /*main principle*/
