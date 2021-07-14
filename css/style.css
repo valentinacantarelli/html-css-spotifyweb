@@ -11,20 +11,67 @@ body{
     background-color: #141922;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    font-size: 13px;
+    
+       
 
 }
 /*header*/
 header {
     height: 60px;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 1 ;
+    background-color: rgba(black,0.5);
+    z-index: 1;
+    top: 0;
+    display: flex; 
+    justify-content: space-between;   
+    align-items: center;  
+    padding: 0 10px; 
+}
+.logo-testo{    
+    
     display: flex;
+    align-items: center;
+}
+.logo  {
+    filter: invert(1);
+    padding-right:10px;
+    width: 50%;
+    height: auto;    
+}
+.spotify{
+    display: inline-block;
+    font-size: 20px;    
+}
+.btn-upgrade{
+    padding: 6px 14px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 11px;
+    vertical-align: middle;
+    
     
 }
+/*main*/
 main{
+    
     display: flex;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 120px);    
+    
 }
+.side-nav {
+    width:160px;
+    background-color: black;
+}
+.main-album{
+    display: flex;
+    height:calc(100vh - 120px);
+    background-color: pink;
+    width: 100%;
+    overflow-y: auto;
+} 
+
+
+
 /*footer*/
 footer{
     background-color: #282828;
@@ -34,4 +81,5 @@ footer{
     justify-content: space-between;
 	align-items: center;
     z-index: 2;
+    
 }
