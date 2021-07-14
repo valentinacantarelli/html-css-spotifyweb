@@ -13,9 +13,6 @@ body{
     color: white;
     font-size: 13px;
     height: 100vh;
-    
-       
-
 }
 /*header*/
 header {
@@ -36,15 +33,10 @@ header {
     align-items: center;
 }
 .logo  {
-    filter: invert(1);
     padding-right:10px;
-    width: 50%;
-    height: auto;    
+    width: 40%;
 }
-.spotify{
-    display: inline-block;
-    font-size: 20px;    
-}
+
 .btn-upgrade{
     padding: 6px 14px;
     border: 1px solid white;
@@ -55,14 +47,60 @@ header {
 /*main*/
 main{
     display: flex;
-    height: 100vh;
- 
-    
+    height: 100vh;   
 }
 .side-nav {
-    width:160px;
+    width:180px;
     background-color: black;
+    /*padding-top: 65px;
+    padding-left: 10px;*/
+    padding: 65px 10px 0 10px;
+    font-size: 12px; 
+    
 }
+.icone{
+    height: 20px;
+    vertical-align: middle;   
+}
+.prima-lista, li{
+   padding: 4px 0;
+    opacity: 0.7;
+    list-style: none;
+    
+}
+.playlist{
+    font-size: 14px;
+    padding: 10px 0;    
+}
+.fa-plus-square{
+    font-size: 24px;
+    vertical-align: middle;
+}
+.hr-nav{
+    margin-top: 5px;
+}
+.profile{
+    background-color: grey;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    
+}
+.name{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 8px;
+}
+.nav-bottom{
+    position: fixed;
+    bottom: 68px;
+}
+.name-nav {
+    padding: 5px 10px 0 0;
+}
+
+
+/*main principle*/
 .main-album{
     display: flex;
     height:100vh;
