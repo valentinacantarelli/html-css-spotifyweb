@@ -3,3 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*common*/
+
+
+/*body*/
+body{
+    background-color: #141922;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+}
+/*header*/
+header {
+    height: 60px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1 ;
+    display: flex;
+    
+}
+main{
+    display: flex;
+    height: calc(100vh - 120px);
+}
+/*footer*/
+footer{
+    background-color: #282828;
+    height: 60px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+    z-index: 2;
+}
