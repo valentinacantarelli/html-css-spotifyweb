@@ -31,6 +31,7 @@ body{
     font-size: 13px;
     height: 100vh;
 }
+
 /*header*/
 header {
     width: calc(100% - 160px);
@@ -42,11 +43,9 @@ header {
     display: flex; 
     justify-content: flex-end;  
     align-items: center;  
-    padding: 0 10px; 
+    padding: 0 15px; 
     position: fixed;
 }
-
-
 .btn-upgrade{
     padding: 6px 14px;
     border: 1px solid white;
@@ -54,12 +53,14 @@ header {
     font-size: 11px;
     vertical-align: middle;   
 }
+
 /*main*/
 main{
     display: flex;
     height: calc(100vh - 60px);   
 }
 
+/*side nav*/
 .side-nav {
     width:160px;
     background-color: black;
@@ -109,7 +110,7 @@ main{
 }
 .nav-bottom{
     position: fixed;
-    bottom: 60px;
+    bottom: 70px;
     background-color: black;
     height: 65px;
 }
@@ -119,8 +120,7 @@ main{
 
 .seconda-lista {
     min-height: 300px;
-    overflow-y: auto;  
-        
+    overflow-y: auto;          
 }
 
 /*main principle*/
@@ -139,7 +139,6 @@ main{
     padding:10px ; 
     display: flex; 
     width: 100%;
-
 }
 .nav-orizzontale li{
     display: inline-block;
@@ -150,8 +149,7 @@ main{
 }
 /*prima row*/
 .title-main{
-    width: 100%;
-   
+    width: 100%;   
 }
 .prima-row {
     display: flex;
@@ -176,13 +174,13 @@ main{
     font-weight: 200;
     font-size: 11px;
 }
+/*seconda row*/
 .seconda-row{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 100%;
-   
+    width: 100%;   
 }
 .sottotitolo-row{
     width: 100%;
@@ -193,17 +191,15 @@ main{
     object-fit: cover;    
     padding: 15px 14px 0 0;
 }
+/*row rounded*/
 .round{
-    border-radius: 50%;
-    
+    border-radius: 50%;    
 }
-
-
 
 /*footer*/
 footer{
     background-color: #282828;
-    height: 60px;
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -211,5 +207,35 @@ footer{
     z-index: 2;
     position: fixed;
     bottom: 0;
+    padding: 0 15px;    
+}
+.footer-left{
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+
+}
+.small-album{
+    width: 60px;
+    height: 60px;
+    padding: 2%; 
+    object-fit: cover;
+}
+.footer-info{    
+    justify-items: flex-start;
+    padding: 0 30px 0 10px;
+}
+.footer-artist{
+    font-weight: 600;
     
+}
+.footer-brano{
+    font-size: 11px;
+    opacity: 0.4;
+    
+}
+.icon-left{
+    padding-right: 15px;
+    font-size: 15px;
+    opacity: 0.4;
 }
