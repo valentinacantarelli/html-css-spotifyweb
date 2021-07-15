@@ -33,26 +33,19 @@ body{
 }
 /*header*/
 header {
-    width: 100%;
+    width: calc(100% - 160px);
     height: 60px;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 1;
+    right: 0;
     top: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;    
     display: flex; 
-    justify-content: space-between;   
+    justify-content: flex-end;  
     align-items: center;  
     padding: 0 10px; 
     position: fixed;
 }
-.logo-testo{    
-    
-    display: flex;
-    align-items: center;
-}
-.logo  {
-    padding-right:10px;
-    width: 40%;
-}
+
 
 .btn-upgrade{
     padding: 6px 14px;
@@ -64,16 +57,25 @@ header {
 /*main*/
 main{
     display: flex;
-    height: 100vh;   
+    height: calc(100vh - 60px);   
 }
+
 .side-nav {
-    width:180px;
+    width:160px;
     background-color: black;
-    padding: 65px 10px 0 10px;
+    padding:  10px 10px;
     font-size: 12px; 
     position: fixed;
     height: 100vh;
     
+}
+.logo-testo{    
+    display: flex;
+    align-items: center;
+    padding: 5px 0 15px 0;
+}
+.logo  {    
+    width: 70%;
 }
 .icone{
     height: 20px;
@@ -118,21 +120,19 @@ main{
 }
 
 .seconda-lista {
-    overflow-y: auto;
-    
+    min-height: 300px;
+    overflow-y: auto;  
         
 }
 
 /*main principle*/
 .main-album{
     display: flex;
-    height:calc(100vh - 60px);
-    /*background-color: pink;*/
-    width:calc(100% - 180px);
-    margin-left: 180px;
+    width:calc(100% - 160px);
+    margin-left: 160px;
     overflow-y: auto;
     padding: 0 15px;
-    margin-top: 60px;
+    padding-top: 60px;
     flex-wrap: wrap;
     align-content: flex-start;
 } 
@@ -163,13 +163,14 @@ main{
         
 }
 .album{
-    width: calc((100% / 6) - 15px);
-    
+    width: calc((100% / 6) - 15px); 
+    height: auto;
+    text-align: center;   
 
 }
 .copertina{
     width: 100%;
-    height: 100%;
+    height: 85%;
     object-fit: cover;
     
 }
