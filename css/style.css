@@ -239,3 +239,35 @@ footer{
     font-size: 15px;
     opacity: 0.4;
 }
+.col-center{
+    text-align: center;
+    padding-top: 3px;
+}
+.player-icon{
+    padding: 0 25px 10px 0;
+    font-size: 18px;
+    
+}
+.fa-play-circle{
+    font-size: 25px;
+}
+.section-player{
+    width: 400px;
+    height: 50%;
+}
+.player{    
+    -webkit-appearance: none;
+    width: 300px;  
+    border-radius: 50px;  
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;    
+    cursor: pointer;
+    
+}
+.player::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;    
+    cursor: pointer;
+  }
