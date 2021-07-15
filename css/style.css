@@ -169,6 +169,13 @@ main{
    width: 100%;    
     object-fit: cover;    
 }
+.album-name {
+    padding: 10px 0 5px 0;
+    font-weight: 600;
+}
+.band-name{
+    font-weight: 200;
+}
 
 
 
