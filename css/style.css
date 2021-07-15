@@ -193,6 +193,10 @@ main{
     object-fit: cover;    
     padding: 15px 14px 0 0;
 }
+.round{
+    border-radius: 50%;
+    
+}
 
 
 
