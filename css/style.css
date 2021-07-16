@@ -4,24 +4,19 @@
     box-sizing: border-box;
 }
 /*common*/
+/*scrollbar*/
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-track {
     background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+::-webkit-scrollbar-thumb {
     background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+::-webkit-scrollbar-thumb:hover {
     background: #555; 
-  }
+}
 
 /*body*/
 body{
@@ -39,7 +34,6 @@ header {
     right: 0;
     top: 0;
     background-color: rgba(0,0,0,0.5);
-    z-index: 1;    
     display: flex; 
     justify-content: flex-end;  
     align-items: center;  
@@ -64,7 +58,7 @@ main{
 .side-nav {
     width:160px;
     background-color: black;
-    padding:  10px 10px;
+    padding: 10px 0;
     font-size: 12px; 
     position: fixed;
     height: 100%;    
@@ -81,16 +75,23 @@ main{
     height: 20px;
     vertical-align: middle;   
 }
-.prima-lista, li{
-    padding: 4px 0;
+.prima-lista li{
+    border-left: 3px solid transparent;
+    padding: 4px 0 0 7px;
     opacity: 0.7;
-    list-style: none;     
+    list-style: none;  
+       
+}
+.prima-lista>.yellow{
+    border-left: 3px solid greenyellow;
+    
 }
 .playlist{
     font-size: 14px;
-    padding: 10px 0;    
+    padding: 15px 0 0 10px;    
 }
 .fa-plus-square{
+    height: 24px;
     font-size: 24px;
     vertical-align: middle;
 }
@@ -123,8 +124,7 @@ main{
     overflow: hidden;
     overflow-y: auto;
     display: flex;
-    flex-grow: 1;
-    
+    flex-grow: 1;   
 
 }
 
@@ -152,6 +152,16 @@ main{
     font-size: 12px;
     font-weight: 500;
 }
+.nav-orizzontale li:first-child::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 40px;
+    background-color: yellowgreen;
+    margin: auto;
+    margin-top: 3px;   
+}
+
 /*prima row*/
 .title-main{
     width: 100%;   
@@ -163,9 +173,10 @@ main{
     padding-top: 20px;        
 }
 .album{
-    width: calc((100% / 6) - 10px);     
-    text-align: center;   
+    text-align: center; 
+    padding: 5px;  
     padding-bottom: 3%;
+    width: calc(100% / 6);
 }
 .copertina{
    width: 100%;    
@@ -217,9 +228,7 @@ footer{
 .footer-left{
     width: 20%;
     display: flex;       
-    justify-content: center;
     align-items: center;
-
 }
 .small-album{
     width: 60px;
