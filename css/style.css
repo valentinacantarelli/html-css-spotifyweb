@@ -45,7 +45,11 @@ header {
     border: 1px solid white;
     border-radius: 20px;
     font-size: 11px;
-    vertical-align: middle;   
+    vertical-align: middle;  
+    transition: transform 0.3s; 
+}
+.btn-upgrade:hover{
+    transform: scale(1.05);
 }
 
 /*main*/
@@ -61,7 +65,8 @@ main{
     padding: 10px 0;
     font-size: 12px; 
     position: fixed;
-    height: 100%;    
+    height: 100%; 
+    
 }
 .logo-testo{    
     display: flex;
@@ -78,13 +83,17 @@ main{
 .prima-lista li{
     border-left: 3px solid transparent;
     padding: 4px 0 0 7px;
-    opacity: 0.7;
+    opacity: 0.5;
     list-style: none;  
+    line-height: 20px;
        
 }
 .prima-lista>.yellow{
     border-left: 3px solid greenyellow;
     
+}
+.prima-lista li:hover{
+    opacity: 1;
 }
 .playlist{
     font-size: 14px;
@@ -94,6 +103,7 @@ main{
     height: 24px;
     font-size: 24px;
     vertical-align: middle;
+    padding-right: 5px;
 }
 .hr-nav{
     margin-top: 5px;
@@ -111,9 +121,10 @@ main{
 }
 .nav-bottom{
     position: fixed;
-    bottom: 70px;
+    bottom: 70px; 
     background-color: black;
     height: 65px;
+    padding-left: 10px;
 }
 .name-nav {
     padding: 5px 10px 0 0;
@@ -121,11 +132,20 @@ main{
 
 .seconda-lista {
     min-height: 300px;
-    overflow: hidden;
     overflow-y: auto;
     display: flex;
     flex-grow: 1;   
 
+}
+.seconda-lista ul li:hover{
+    opacity: 1;
+}
+.download{
+    padding-left: 5px;
+    opacity: 0.5;
+}
+.download:hover{
+    opacity: 1;
 }
 
 /*main principle*/
@@ -143,15 +163,19 @@ main{
     justify-content: center;
     padding:10px ; 
     display: flex; 
-    width: 100%;
+    width: 100%;   
 }
+
 .nav-orizzontale li{
     display: inline-block;
     text-align: center;
     padding: 0 15px 20px 0;
     font-size: 12px;
     font-weight: 500;
+    color: lightgray;    
+    
 }
+
 .nav-orizzontale li:first-child::after{
     content: '';
     display: block;
@@ -160,6 +184,9 @@ main{
     background-color: yellowgreen;
     margin: auto;
     margin-top: 3px;   
+}
+.nav-orizzontale li:hover{
+    color: white;
 }
 
 /*prima row*/
