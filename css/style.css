@@ -29,7 +29,8 @@ body{
 
 /*header*/
 header {
-    width: calc(100% - 160px);
+    width: calc(100% - 130px);
+    /* width: calc(100% - 160px); */
     height: 60px;
     right: 0;
     top: 0;
@@ -50,6 +51,7 @@ header {
 }
 .btn-upgrade:hover{
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 /*main*/
@@ -60,13 +62,12 @@ main{
 
 /*side nav*/
 .side-nav {
-    width:160px;
+    width:190px;
     background-color: black;
     padding: 10px 0;
     font-size: 12px; 
-    position: fixed;
-    height: 100%; 
-    
+    flex-direction: column;
+    display: flex;
 }
 .logo-testo{    
     display: flex;
@@ -94,10 +95,15 @@ main{
 }
 .prima-lista li:hover{
     opacity: 1;
+    cursor: pointer;
 }
 .playlist{
     font-size: 14px;
-    padding: 15px 0 0 10px;    
+    padding: 15px 0 10px 10px;    
+}
+.plus-playlist{
+    padding-left: 10px;
+    opacity: 0.5;
 }
 .fa-plus-square{
     height: 24px;
@@ -120,25 +126,22 @@ main{
     padding-left: 8px;
 }
 .nav-bottom{
-    position: fixed;
     bottom: 70px; 
     background-color: black;
     height: 65px;
-    padding-left: 10px;
+    padding:0 10px 0 10px;
 }
 .name-nav {
     padding: 5px 10px 0 0;
 }
 
 .seconda-lista {
-    min-height: 300px;
     overflow-y: auto;
-    display: flex;
-    flex-grow: 1;   
-
+    flex-grow: 1;  
 }
 .seconda-lista ul li:hover{
     opacity: 1;
+    cursor: pointer;
 }
 .download{
     padding-left: 5px;
@@ -146,13 +149,13 @@ main{
 }
 .download:hover{
     opacity: 1;
+    cursor: pointer;
 }
 
 /*main principle*/
 .main-album{
     display: flex;
-    width:calc(100% - 160px);
-    margin-left: 160px;
+    width: 100%;
     overflow-y: auto;
     padding: 60px 15px 0 15px;
     flex-wrap: wrap;
@@ -187,6 +190,7 @@ main{
 }
 .nav-orizzontale li:hover{
     color: white;
+    cursor: pointer;
 }
 
 /*prima row*/
@@ -207,8 +211,21 @@ main{
 }
 .copertina{
    width: 100%;    
-    object-fit: cover;    
+    object-fit: cover; 
+       
 }
+.cover{
+    
+}
+/* .cover:hover .cover::after{
+    content: '*f144*';
+    position: absolute;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%) contrast(120%);         
+} */
+
 .album-name {
     padding: 10px 0 5px 0;
     font-weight: 600;
