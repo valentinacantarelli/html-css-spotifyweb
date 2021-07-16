@@ -120,7 +120,12 @@ main{
 
 .seconda-lista {
     min-height: 300px;
-    overflow-y: auto;          
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-grow: 1;
+    
+
 }
 
 /*main principle*/
@@ -210,6 +215,7 @@ footer{
     padding: 0 15px;    
 }
 .footer-left{
+    width: 20%;
     display: flex;       
     justify-content: center;
     align-items: center;
@@ -240,6 +246,7 @@ footer{
     opacity: 0.4;
 }
 .col-center{
+    width: 50%;
     text-align: center;
     padding-top: 3px;
 }
@@ -257,20 +264,19 @@ footer{
     font-size: 20px;
 }
 .section-player{
-    width: 400px;
+    width: 100%;
     height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.time{
-    
-    font-size: 11px;
+.time{    
+    font-size: 10px;
 }
 .slider-player{
     margin: 0 8px;
     height: 4px;
-    width: 300px;
+    width: 270px;
     border-radius: 15px;
     background-color: gray;
     position: relative;
@@ -283,4 +289,44 @@ footer{
     left: 0;
     border-radius: 15px;
 }
+.col-right  {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.icons-footer-right{
+    display: flex;
+    font-size: 15px;
+    padding-right: 10px;
+        
+}
+.icons-footer-right>.fas{
+    padding: 0 8px;
+}
+.section-volume {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.volume{
+    margin: 0 3px;
+    height: 3px;
+    width: 80px;
+    border-radius: 15px;
+    background-color: grey;
+    position: relative;
+}
+.volume-over{
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 30%;
+    left: 0;
+    border-radius: 15px;
+    
+}
+
 
