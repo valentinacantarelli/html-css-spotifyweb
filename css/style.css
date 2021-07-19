@@ -40,6 +40,7 @@ header {
     align-items: center;  
     padding: 0 15px; 
     position: fixed;
+    z-index: 1;
 }
 .btn-upgrade{
     padding: 6px 14px;
@@ -97,6 +98,40 @@ main{
     opacity: 1;
     cursor: pointer;
 }
+/*media query*/
+@media screen and (max-width:600px){
+    .prima-lista span {
+        display: none;
+        
+    }
+    .prima-lista li{
+        opacity: 1;
+        
+    }
+    .playlist{
+        display:none;
+    }
+    .seconda-lista{
+        display: none;
+        
+    }
+    .prima-lista hr{
+        display: none;
+
+    }
+    .name-nav .name{
+        display: none;
+        
+    }
+    .plus-playlist{
+        display: none;
+    }
+    .side-nav{
+        align-content:space-between ;
+    }
+    
+    
+}
 .playlist{
     font-size: 14px;
     padding: 15px 0 10px 10px;    
@@ -151,6 +186,7 @@ main{
     opacity: 1;
     cursor: pointer;
 }
+
 
 /*main principle*/
 .main-album{
@@ -258,6 +294,9 @@ main{
     .album{        
         width: calc(100% / 2);
         
+    }
+    .nav-orizzontale{
+        text-align: center;
     }
      
 }
