@@ -211,16 +211,13 @@ main{
 }
 .copertina{
    width: 100%;    
-    object-fit: cover; 
-       
+    object-fit: cover;        
 }
 .album{
-    position:relative;
-    
+    position:relative;    
 }
-
 .cover{
-    position: relative;
+    position: relative;    
 }
 .cover::after{
     font-family: "Font Awesome 5 Free";
@@ -234,13 +231,11 @@ main{
     display: none;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,0.5);
-
+    background-color: rgba(0,0,0,0.5);    
 }
 .album:hover .cover::after{
     display: flex;
 }
-
 .album-name {
     padding: 10px 0 5px 0;
     font-weight: 600;
@@ -249,6 +244,25 @@ main{
     font-weight: 200;
     font-size: 11px;
 }
+/*media query*/
+@media  screen and  (max-width: 1100px){
+    .album{        
+        width: calc(100% / 4);
+        
+    }
+    .prima-row{
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 700px) {
+    .album{        
+        width: calc(100% / 2);
+        
+    }
+     
+}
+
+    
 /*seconda row*/
 .seconda-row{
     display: flex;
@@ -268,8 +282,18 @@ main{
 }
 /*row rounded*/
 .round{
-    border-radius: 50%;    
+    border-radius: 50%; 
+    display: block;  
+    position: relative;
+    overflow: hidden; 
 }
+/*.over-round:hover {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}*/
 
 /*footer*/
 footer{
@@ -433,5 +457,6 @@ footer{
     position: absolute;
     top: -3px;
 }
+
 
 
