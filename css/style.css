@@ -54,6 +54,11 @@ header {
     transform: scale(1.05);
     cursor: pointer;
 }
+@media screen and (max-width:600px){
+    header{
+        width:calc(100% - 40px);
+    }
+}
 
 /*main*/
 main{
@@ -98,7 +103,11 @@ main{
     opacity: 1;
     cursor: pointer;
 }
+.solo-logo{
+    display: none;
+}
 /*media query*/
+
 @media screen and (max-width:600px){
     .prima-lista span {
         display: none;
@@ -128,9 +137,24 @@ main{
     }
     .side-nav{
         align-content:space-between ;
+        width: 40px;
     }
+    .prima-lista{
+        flex-grow: 1;
+    }
+    .logo-testo{
+        display: none;
+    }
+    .solo-logo {
+        display: flex;        
     
-    
+    }
+    .logo-small{
+        height: 20px;
+        align-items: flex-end;
+        padding-left: 10px;
+    }
+        
 }
 .playlist{
     font-size: 14px;
@@ -496,6 +520,35 @@ footer{
     position: absolute;
     top: -3px;
 }
-
+/*media query*/
+@media screen and (max-width:600px){
+    footer{
+        flex-wrap: wrap;
+        height: 100px ;
+    }
+    .col-center{
+        order: -1;
+        width: 100%;
+        height: 50%;    
+    }
+    .section-player{
+        width: 60%;
+        margin: auto;
+    }
+    .small-album{
+        display: none;
+    }
+    .icon-left{
+        display: none;
+    }
+    
+    .footer-left{
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        
+    }
+   
+    
 
 
