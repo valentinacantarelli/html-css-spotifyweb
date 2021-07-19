@@ -218,24 +218,27 @@ main{
     position:relative;
     
 }
-/* .cover:hover .cover::after{
-    content: '*f144*';
-    position: absolute;    
-    display: flex;
+
+.cover{
+    position: relative;
+}
+.cover::after{
+    font-family: "Font Awesome 5 Free";
+    content: '\f144';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    font-size: 30px;
+    display: none;
     justify-content: center;
     align-items: center;
-    filter: grayscale(100%) contrast(120%);         
-} */
-.album:hover .cover{
-    content: '*f144*';
     background-color: rgba(0,0,0,0.5);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-   
 
+}
+.album:hover .cover::after{
+    display: flex;
 }
 
 .album-name {
