@@ -138,6 +138,7 @@ main{
     .side-nav{
         align-content:space-between ;
         width: 40px;
+        height:calc(100vh - 100px);
     }
     .prima-lista{
         flex-grow: 1;
