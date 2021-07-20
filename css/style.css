@@ -353,6 +353,7 @@ main{
 /*row rounded*/
 .round{
     border-radius: 50%; 
+    overflow: hidden;
    
 }
 /*.over-round:hover {
