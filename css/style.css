@@ -324,6 +324,12 @@ main{
     }
      
 }
+@media screen and (max-width: 400px) {
+    .album{
+        width: 100%;
+    }
+
+}
 
     
 /*seconda row*/
@@ -346,9 +352,7 @@ main{
 /*row rounded*/
 .round{
     border-radius: 50%; 
-    display: block;  
-    position: relative;
-    overflow: hidden; 
+   
 }
 /*.over-round:hover {
     background-color: rgba(0,0,0,0.5);
